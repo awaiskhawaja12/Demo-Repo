@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">    
+<body>
+    <h1>Contact Us</h1>
+    <head>
+        <nav>
+            <ul>
+                <h2>
+                    <a href="prac.html"><li>Home</li></a>
+                <a href="contact.html"><li>Contact</li></a>
+                <a href="about.html"><li>About</li></a>
+                <a href="contactpage.html"><li>Contact Us Page</li></a>
+                </h2>
+                
+            </ul>
+         </nav>   
+    </head>
+    <p><strong>This is a contact page.</strong></p>
+    <form>
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email Address"required>
+        <input type="tel" name="phone_num" placeholder="+97333334545"
+        pattern=[\+]\d{3}\d{8}
+        required > 
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button name="Submit">Submit</button>
+     
+    </form>
+</body>
+</html>

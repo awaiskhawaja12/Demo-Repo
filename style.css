@@ -1,0 +1,230 @@
+
+.t
+{
+  
+    padding:3px;
+    text-shadow: 1px 1px;
+
+}
+.box
+{
+    
+     height: 200px;
+    width:200px;
+    background: blue;
+    margin:3px;
+  
+    box-shadow:0px 10px 60px 5px gray inset;
+    
+
+}
+nav
+{
+background-color: rgba(25, 0, 255, 0.171);
+
+text-shadow: 1px 1px;
+box-shadow:0px 2px 13px 2px blue inset;
+}
+nav ul
+{
+    list-style-type: none; 
+}
+a
+{
+    text-decoration-line: none;
+}
+nav li
+{
+ display: inline-block;
+   padding: 7px;
+}
+.nav-wrapper
+{
+    background-color: skyblue;
+}
+.pxc
+{
+    text-align: center;
+    border: 3px solid black;
+    background-color: rgb(43, 226, 141);
+    box-shadow:0px 3px 20px 0px gold inset;
+}
+img
+{
+    
+    box-shadow:15px 10px 10px 10px gray ;
+}
+
+.cc
+{
+    text-shadow: 1px 1px;
+    text-align: center;
+    background-color: greenyellow;
+    box-shadow:2px 2px 20px 3px yellow inset;
+}
+.flex
+{
+    margin:5px;
+    border:3px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@keyframes fadeMe
+{
+0%
+{
+    opacity:1;
+}
+100%
+{
+    opacity:0;
+}
+}
+#box1
+{
+    animation-name:fadeMe;
+    animation-duration:4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes rotation
+{
+    0%{transform: rotate(90deg);}
+    50%{transform: rotate(180deg);}
+    100%{transform: rotate(360deg);}
+    
+}
+#box2
+{
+    animation:rotation;
+    animation-duration:2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    border-radius: 10%;
+    background-image:radial-gradient(circle , blue, blueviolet, red, orange, yellow);
+}
+@keyframes getBigger
+{
+    0% {transform: scale(1);}
+    50% {transform: scale(2);}
+    100% {transform: scale(0.5);}
+}
+#box3
+{
+    animation: getBigger infinite 8s linear;
+    border-radius:50%;
+    background:orange;
+}
+@keyframes changeColors
+{
+    0%{background-color: grey;}
+    25%{background-color: purple;}
+    50%{background-color: yellow;}
+    75%{background-color: pink;}
+    100%{background-color: grey;}
+}
+#box4
+{
+    animation: changeColors 1s 2s forwards;
+}
+@keyframes moveBox
+{
+0%{left: 0px; top: 0px;}
+25%{left: 100px; top: 0px;}
+50%{left: 100px; top: 200px;}
+75%{left: 0px; top: 200px;}
+100%{left: 0px; top: 0px;}
+}
+#box5
+{
+    position:relative;
+    background: red;
+    animation: moveBox 5s 3s;
+}
+#box6
+{
+    top:10px;
+    left:20px;
+    position: relative;
+}
+
+form input,textarea,button
+{
+    display: block;
+    margin: 20px;
+}
+ .contact-box
+{
+    display:flex;
+    justify-content:center;
+}
+.row
+{
+    margin: 30px;
+}
+.input-field
+{
+    margin: 20px;
+} 
+.wrapper {
+    display: grid;
+grid-gap: 10px;
+    grid-template-columns: repeat(5, [col] 100px ) ;
+    grid-template-rows: repeat(3, [row] auto  );
+    background-color: #fff;
+    color: #444;
+}
+
+.Box {
+    background-color: #fff;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px;
+    font-size: 150%;
+    z-index:10;
+
+}
+
+.a {
+    grid-column: col / span  3;
+    grid-row: row ;
+    display:flex;
+    justify-content:center;
+}
+.b {
+    grid-column: col 4 / span  3 ;
+    grid-row: row ;
+    display:flex;
+    justify-content:center;
+}
+.c {
+    grid-column: col /span 6;
+    grid-row: row 2 ;
+    display:flex;
+    justify-content:center;
+    background-image:linear-gradient(pink , yellow , purple , orange);
+}
+.d {
+    grid-column: col  / span  3 ;
+    grid-row: row 3 ;
+    display:flex;
+    justify-content:center;
+}
+
+.e {
+    grid-column: col 3/ span  4;
+    grid-row: row 3;
+    display:flex;
+    justify-content:center;
+}
+
+.f {
+    grid-column: col 3 / span 3;
+    grid-row: row 2  ;
+    background-color: rgba(49,121,207, 0.5);
+    z-index: 20;
+    display:flex;
+    justify-content:center;
+    background-image:linear-gradient(orange , purple,yellow,pink);
+}
