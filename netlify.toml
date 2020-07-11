@@ -1,0 +1,4 @@
+[[redirects]]
+from = "/*"
+to = "/prac.html"
+status = 200
