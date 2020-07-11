@@ -8,4 +8,4 @@ status = 200
 from = "/*"
 to = "/prac.html"
 status = 200
->>>>>>> 9fae0109b6c5becb9ded55d010e6dd8a530d0428
+
